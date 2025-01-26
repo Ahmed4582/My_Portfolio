@@ -13,11 +13,56 @@
       href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* تنسيقات إضافية لتحسين الكاردات */
+      .card-speacial {
+        min-height: 400px; /* ارتفاع ثابت للكاردات */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .card-speacial:hover {
+        transform: translateY(-5px); /* تأثير رفع الكارد عند التحويم */
+      }
+
+      .card-speacial img {
+        width: 100%;
+        height: 200px; /* ارتفاع ثابت للصور */
+        object-fit: cover; /* للحفاظ على نسبة العرض إلى الارتفاع */
+        border-radius: 10px;
+      }
+
+      .btn-site {
+        width: 100%; /* الزر يأخذ العرض الكامل */
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-site:hover {
+        background-color: #0056b3; /* تغيير لون الزر عند التحويم */
+      }
+
+      .project-skills p {
+        margin: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+      }
+    </style>
     <title>Portfolio</title>
   </head>
   <body class="bg-black">
     <!-- Start Portfolio -->
-    <div class="container ">
+    <div class="container">
       <div class="row">
         <!-- Start AboutMe -->
         <div class="col-lg-3 col-md-12 col-sm-12">
@@ -32,7 +77,9 @@
               />
             </div>
             <div class="name mt-3">
-              <h4 class="fw-bold">Ahmed <span class="text-white">Naser</span></h4>
+              <h4 class="fw-bold">
+                Ahmed <span class="text-white">Naser</span>
+              </h4>
             </div>
             <div
               class="jop-subject rounded-4 mt-2 d-flex mx-auto justify-content-center align-items-center"
@@ -43,7 +90,7 @@
               class="Resume mt-3 rounded-4 d-flex mx-auto justify-content-center align-items-center"
             >
               <a
-                href="https://ahmed-resume23.tiiny.site/"
+                href="https://pdf.ac/1yS141"
                 target="_blank"
                 class="text-decoration-none d-flex justify-content-center align-items-center gap-2"
               >
@@ -99,11 +146,11 @@
                 <a href="tel:+201142399186" target="_blank">+201142399186</a>
               </div>
             </div>
-            <div class="email-me mt-3 ">
-              <button class="btn  rounded-5 px-4 btn-outline-primary">
+            <div class="email-me mt-3">
+              <button class="btn rounded-5 px-4 btn-outline-primary">
                 <a
                   href="mailto:ahmed269117@gmail.com"
-                  class="text-decoration-none "
+                  class="text-decoration-none"
                   >Email Me</a
                 >
               </button>
@@ -112,7 +159,7 @@
         </div>
         <!-- End AboutMe -->
         <!-- Start ResumeAbout -->
-        <div class="col-lg-9 col-md-12 col-sm-12 mt-2 mt-lg-0 ">
+        <div class="col-lg-9 col-md-12 col-sm-12 mt-2 mt-lg-0">
           <div class="card mt-5 p-3 rounded-4 text-center h-100">
             <ul
               class="nav justify-content-center nav-pills d-flex gap-2 mb-3"
@@ -174,11 +221,11 @@
               >
                 <div class="text-start text-white mt-3">
                   <p class="p-style">
-                    Hello, I'm AhmedNaser, a dedicated front-end developer
-                    with a strong passion for turning creative designs into
-                    seamless and interactive web experiences. I'm the bridge
-                    between design concepts and functional web interfaces, and I
-                    thrive on making design visions come to life on the web.
+                    Hello, I'm AhmedNaser, a dedicated front-end developer with
+                    a strong passion for turning creative designs into seamless
+                    and interactive web experiences. I'm the bridge between
+                    design concepts and functional web interfaces, and I thrive
+                    on making design visions come to life on the web.
                   </p>
                   <div class="card card-speacial p-3">
                     <h6 class="text-white">What I am doing</h6>
@@ -622,174 +669,358 @@
                 <div class="container-fluid over">
                   <div>
                     <div class="row g-2">
-                        <div class="col-lg-4 col-sm-6 col-md-6">
-                          <div class="card card-speacial h-100 p-2">
-                            <div class="img">
-                              <img src="img/Caarbon.jpeg" class="w-100 rounded-2" alt="">
-                            </div>
-                            <h5 class="text-start text-white project-name mt-1">Caarbon</h5>
-                            <h6 class="text-start project-name text-white">Skills : </h6>
-                            <div class="project-skills d-flex gap-2 flex-wrap text-white">
-                              <p class="mb-0">HTML</p>
-                              <p class="mb-0">JavaScript</p>
-                              <p class="mb-0">Tailwind</p>
-                              <p class="mb-0">React</p>
-                              <p class="mb-0">Responsive Design</p>
-                            </div>
-                            <a class="btn text-start mt-2 text-white btn-site mt-5" target="_blank" href="https://caarbonrentacar.com/">Test
-                              The Project</a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 col-md-6">
-                          <div class="card card-speacial h-100 p-2">
-                            <div class="img">
-                              <img src="img/fahd (1).png" class="w-100 rounded-2" alt="">
-                            </div>
-                            <h5 class="text-start text-white project-name mt-1">El-Fahd</h5>
-                            <h6 class="text-start project-name text-white">Skills : </h6>
-                            <div class="project-skills d-flex gap-2 flex-wrap text-white">
-                              <p class="mb-0">HTML</p>
-                              <p class="mb-0">JavaScript</p>
-                              <p class="mb-0">Tailwind</p>
-                              <p class="mb-0">React</p>
-                              <p class="mb-0">Responsive Design</p>
-                            </div>
-                            <a class="btn text-start mt-2 text-white btn-site mt-5" target="_blank" href="https://elfahdapp.vercel.app/">Test
-                              The Project</a>
-                          </div>
-                        </div>
                       <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card card-speacial h-100 p-2">
                           <div class="img">
-                            <img src="img/Screenshot 2024-04-02 150958.png" class="w-100 rounded-2" alt="">
+                            <img
+                              src="img/Caarbon.jpeg"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
                           </div>
-                          <h5 class="text-start text-white project-name mt-1 text-danger">DashBoard Design</h5>
-                          <h6 class="text-start project-name text-white">Skills : </h6>
-                          <div class="project-skills d-flex gap-2 flex-wrap text-white">
+                          <h5 class="text-start text-white project-name mt-1">
+                            Caarbon
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
                             <p class="mb-0">HTML</p>
-                            <p class="mb-0"> CSS</p>
-                            <p class="mb-0">BootStrap</p>
-                            <p class="mb-3">Responsive Design</p>
+                            <p class="mb-0">JavaScript</p>
+                            <p class="mb-0">Tailwind</p>
+                            <p class="mb-0">React</p>
+                            <p class="mb-0">Responsive Design</p>
                           </div>
-                          <a class="btn text-start  text-white btn-site mt-5" target="_blank" href="https://ahmed4582.github.io/DashBoard-Design/HTML/Dash.html">Test The Project</a>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-5"
+                            target="_blank"
+                            href="https://caarbonrentacar.com/"
+                            >Test The Project</a
+                          >
                         </div>
                       </div>
                       <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card card-speacial h-100 p-2">
                           <div class="img">
-                            <img src="img/Screenshot_3-4-2024_25127_ahmed4582.github.io.jpeg" class="w-100 rounded-2" alt="">
+                            <img
+                              src="img/fahd (1).png"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
                           </div>
-                          <h5 class="text-start text-white project-name mt-1 text-danger">Bondi Design</h5>
-                          <h6 class="text-start project-name text-white">Skills : </h6>
-                          <div class="project-skills d-flex gap-2 flex-wrap text-white">
+                          <h5 class="text-start text-white project-name mt-1">
+                            El-Fahd
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
                             <p class="mb-0">HTML</p>
-                            <p class="mb-0"> CSS</p>
-                            <p class="mb-0">BootStrap</p>
-                            <p class="mb-3">Responsive Design</p>
+                            <p class="mb-0">JavaScript</p>
+                            <p class="mb-0">Tailwind</p>
+                            <p class="mb-0">React</p>
+                            <p class="mb-0">Responsive Design</p>
                           </div>
-                          <a class="btn text-start mt-2 text-white btn-site mt-5" target="_blank" href="https://ahmed4582.github.io/Bondi/Project_Bondi.html">Test The Project</a>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-5"
+                            target="_blank"
+                            href="https://elfahdapp.vercel.app/"
+                            >Test The Project</a
+                          >
                         </div>
                       </div>
                       <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card card-speacial h-100 p-2">
                           <div class="img">
-                            <img src="img/img.png" class="w-100 rounded-2" alt="">
+                            <img
+                              src="img/Screenshot 2024-04-02 150958.png"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
                           </div>
-                          <h5 class="text-start text-white project-name mt-1">MedicalPlateForm</h5>
-                          <h6 class="text-start project-name text-white">Skills : </h6>
-                          <div class="project-skills d-flex gap-2 flex-wrap text-white">
+                          <h5
+                            class="text-start text-white project-name mt-1 text-danger"
+                          >
+                            DashBoard Design
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
                             <p class="mb-0">HTML</p>
-                            <p class="mb-0"> JavaScript</p>
+                            <p class="mb-0">CSS</p>
+                            <p class="mb-0">BootStrap</p>
+                            <p class="mb-3">Responsive Design</p>
+                          </div>
+                          <a
+                            class="btn text-start text-white btn-site mt-5"
+                            target="_blank"
+                            href="https://ahmed4582.github.io/DashBoard-Design/HTML/Dash.html"
+                            >Test The Project</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="card card-speacial h-100 p-2">
+                          <div class="img">
+                            <img
+                              src="img/Screenshot_3-4-2024_25127_ahmed4582.github.io.jpeg"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
+                          </div>
+                          <h5
+                            class="text-start text-white project-name mt-1 text-danger"
+                          >
+                            Bondi Design
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
+                            <p class="mb-0">HTML</p>
+                            <p class="mb-0">CSS</p>
+                            <p class="mb-0">BootStrap</p>
+                            <p class="mb-3">Responsive Design</p>
+                          </div>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-5"
+                            target="_blank"
+                            href="https://ahmed4582.github.io/Bondi/Project_Bondi.html"
+                            >Test The Project</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="card card-speacial h-100 p-2">
+                          <div class="img">
+                            <img
+                              src="img/img.png"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
+                          </div>
+                          <h5 class="text-start text-white project-name mt-1">
+                            MedicalPlateForm
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
+                            <p class="mb-0">HTML</p>
+                            <p class="mb-0">JavaScript</p>
                             <p class="mb-0">Tailwind</p>
                             <p class="mb-0">React</p>
                             <p class="mb-2">Responsive Design</p>
                           </div>
-                          <a class="btn text-start mt-2 text-white btn-site mt-5" target="_blank" href="https://medical-woad.vercel.app/">Test The Project</a>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-5"
+                            target="_blank"
+                            href="https://medical-woad.vercel.app/"
+                            >Test The Project</a
+                          >
                         </div>
                       </div>
                       <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card card-speacial h-100 p-2">
                           <div class="img">
-                            <img src="img/akar24.png" class="w-100 rounded-2" alt="">
+                            <img
+                              src="img/akar24.png"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
                           </div>
-                          <h5 class="text-start text-white project-name mt-1">Akar_24</h5>
-                          <h6 class="text-start project-name text-white">Skills : </h6>
-                          <div class="project-skills d-flex gap-2 flex-wrap text-white">
+                          <h5 class="text-start text-white project-name mt-1">
+                            Akar_24
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
                             <p class="mb-0">HTML</p>
-                            <p class="mb-0"> JavaScript</p>
+                            <p class="mb-0">JavaScript</p>
                             <p class="mb-0">Tailwind</p>
                             <p class="mb-0">React</p>
                             <p class="mb-0">lang</p>
                             <p class="mb-3">Responsive Design</p>
                           </div>
-                          <a class="btn text-start mt-2 text-white btn-site mt-5" target="_blank" href="https://akar-24.vercel.app/">Test The Project</a>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-5"
+                            target="_blank"
+                            href="https://akar-24.vercel.app/"
+                            >Test The Project</a
+                          >
                         </div>
                       </div>
                       <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card card-speacial h-100 p-2">
                           <div class="img">
-                            <img src="img/ageClac.png" class="w-100 rounded-2" alt="">
+                            <img
+                              src="img/ageClac.png"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
                           </div>
-                          <h5 class="text-start text-white project-name mt-1">Age Cala</h5>
-                          <h6 class="text-start project-name text-white">Skills : </h6>
-                          <div class="project-skills d-flex gap-2 flex-wrap text-white">
+                          <h5 class="text-start text-white project-name mt-1">
+                            Age Cala
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
                             <p class="mb-0">HTML</p>
-                            <p class="mb-0"> CSS</p>
+                            <p class="mb-0">CSS</p>
                             <p class="mb-0">BootStrap</p>
                             <p class="mb-0">JavaScript</p>
                             <p class="mb-0">Responsive Design</p>
                           </div>
-                          <a class="btn text-start mt-2 text-white btn-site mt-5" target="_blank" href="https://age-clac.vercel.app/">Test The Project</a>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-5"
+                            target="_blank"
+                            href="https://age-clac.vercel.app/"
+                            >Test The Project</a
+                          >
                         </div>
                       </div>
                       <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card card-speacial h-100 p-2">
                           <div class="img">
-                            <img src="img/Movie.png" class="w-100 rounded-2" alt="">
+                            <img
+                              src="img/Movie.png"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
                           </div>
-                          <h5 class="text-start text-white project-name mt-1">Movie Night</h5>
-                          <h6 class="text-start project-name text-white">Skills : </h6>
-                          <div class="project-skills d-flex gap-2 flex-wrap text-white">
+                          <h5 class="text-start text-white project-name mt-1">
+                            Movie Night
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
                             <p class="mb-0">HTML</p>
-                            <p class="mb-0"> CSS</p>
+                            <p class="mb-0">CSS</p>
                             <p class="mb-0">BootStrap</p>
                             <p class="mb-0">Responsive Design</p>
                             <p class="mb-0">React</p>
                             <p class="mb-2">Context</p>
                           </div>
-                          <a class="btn text-start mt-2 text-white btn-site mt-3" target="_blank" href="https://ahmed4582.github.io/Movies/">Test The Project</a>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-3"
+                            target="_blank"
+                            href="https://ahmed4582.github.io/Movies/"
+                            >Test The Project</a
+                          >
                         </div>
                       </div>
                       <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card card-speacial h-100 p-2">
                           <div class="img">
-                            <img src="img/Crud.png" class="w-100 rounded-2" alt="">
+                            <img
+                              src="img/Crud.png"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
                           </div>
-                          <h5 class="text-start text-white project-name mt-1">Crud App</h5>
-                          <h6 class="text-start project-name text-white">Skills : </h6>
-                          <div class="project-skills d-flex gap-2 flex-wrap text-white">
+                          <h5 class="text-start text-white project-name mt-1">
+                            Crud App
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
                             <p class="mb-0">HTML</p>
-                            <p class="mb-0"> CSS</p>
+                            <p class="mb-0">CSS</p>
                             <p class="mb-0">BootStrap</p>
                             <p class="mb-0">Responsive Design</p>
                             <p class="mb-2">React</p>
                           </div>
-                          <a class="btn text-start mt-2 text-white btn-site mt-3" target="_blank" href="https://ahmed4582.github.io/Crud/">Test The Project</a>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-3"
+                            target="_blank"
+                            href="https://ahmed4582.github.io/Crud/"
+                            >Test The Project</a
+                          >
                         </div>
                       </div>
                       <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card card-speacial h-100 p-2">
                           <div class="img">
-                            <img src="img/to-do-list.png" class="w-100 rounded-2" alt="">
+                            <img
+                              src="img/carbon.png"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
                           </div>
-                          <h5 class="text-start text-white project-name mt-1">To Do List</h5>
-                          <h6 class="text-start project-name text-white">Skills : </h6>
-                          <div class="project-skills d-flex gap-2 flex-wrap text-white">
+                          <h5 class="text-start text-white project-name mt-1">
+                            Carbon App
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
+                            <p class="mb-0">Jsx</p>
+                            <p class="mb-0">Tailwind</p>
+                            <p class="mb-0">Redux</p>
+                            <p class="mb-0">Responsive Design</p>
+                            <p class="mb-2">React</p>
+                          </div>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-3"
+                            target="_blank"
+                            href="https://caarbonrentacar.com/"
+                            >Test The Project</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="card card-speacial h-100 p-2">
+                          <div class="img">
+                            <img
+                              src="img/to-do-list.png"
+                              class="w-100 rounded-2"
+                              alt=""
+                            />
+                          </div>
+                          <h5 class="text-start text-white project-name mt-1">
+                            To Do List
+                          </h5>
+                          <h6 class="text-start project-name text-white">
+                            Skills :
+                          </h6>
+                          <div
+                            class="project-skills d-flex gap-2 flex-wrap text-white"
+                          >
                             <p class="mb-0">HTML</p>
-                            <p class="mb-0"> CSS</p>
+                            <p class="mb-0">CSS</p>
                             <p class="mb-5">JAVASCRIPT</p>
                           </div>
-                          <a class="btn text-start mt-2 text-white btn-site mt-5" target="_blank" href="https://ahmed4582.github.io/ToDoListJS/">Test The Project</a>
+                          <a
+                            class="btn text-start mt-2 text-white btn-site mt-5"
+                            target="_blank"
+                            href="https://ahmed4582.github.io/ToDoListJS/"
+                            >Test The Project</a
+                          >
                         </div>
                       </div>
                     </div>
